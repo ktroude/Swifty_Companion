@@ -17,14 +17,14 @@ data class User(
     val location: String?,
     @SerializedName("cursus_users") val cursusUsers: List<CursusUser>?,
     @SerializedName("projects_users") val projectsUsers: List<ProjectUser>?,
-) : Parcelable
+) : Parcelable;
 
 
 @Parcelize
 data class Image(
     @SerializedName("link") val link: String?,
     val versions: ImageVersions?
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class ImageVersions(
@@ -32,7 +32,7 @@ data class ImageVersions(
     val medium: String?,
     val small: String?,
     val micro: String?
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class CursusUser(
@@ -45,21 +45,21 @@ data class CursusUser(
     @SerializedName("end_at") val endAt: String?,
     val user: User?,
     val cursus: Cursus?
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class Cursus(
     val id: Int,
     val name: String,
     val slug: String
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class Skill(
     val id: Int,
     val name: String,
     val level: Float
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class ProjectUser(
@@ -69,14 +69,14 @@ data class ProjectUser(
     @SerializedName("validated?") val validated: Boolean?,
     val project: Project?,
     @SerializedName("cursus_ids") val cursusIds: List<Int>?
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class Project(
     val id: Int,
     val name: String,
     val slug: String
-) : Parcelable
+) : Parcelable;
 
 @Parcelize
 data class Achievement(
@@ -87,4 +87,4 @@ data class Achievement(
     val kind: String?,
     val image: String?,
     @SerializedName("nbr_of_success") val numberOfSuccess: Int?
-) : Parcelable
+) : Parcelable;

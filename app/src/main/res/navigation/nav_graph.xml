@@ -17,7 +17,7 @@
     <!-- Fragment de détail -->
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.swifty.ui.detail.DetailFragment"
+        android:name="com.example.swifty.ui.details.DetailFragment"
         android:label="Detail Fragment">
         <argument
             android:name="user"
