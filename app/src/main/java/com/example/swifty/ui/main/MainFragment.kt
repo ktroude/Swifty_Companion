@@ -27,7 +27,7 @@ class MainFragment : Fragment() {
     private val repository = Repository(
         clientId = "",
         clientSecret = ""
-    )
+    );
 
     /**
      * ViewModel instance used to manage UI-related data and handle API calls.
