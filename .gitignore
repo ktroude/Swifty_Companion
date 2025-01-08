@@ -1,0 +1,87 @@
+# Gradle files
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/caches/
+.gradle/gradle.properties
+.gradle/gradle.*
+
+# Local configuration file (sdk path, signing keys, etc.)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# Build directories
+/build/
+**/build/
+
+# Crashlytics and Firebase files
+crashlytics.properties
+fabric.properties
+firebase-debug.log
+**/google-services.json
+**/google-services.plist
+
+# Generated files
+captures/
+output.json
+
+# Keystore files
+*.jks
+*.keystore
+
+# Gradle Wrapper
+gradlew
+gradlew.bat
+gradle-wrapper.jar
+
+# Environment files
+.env
+.env.*
+
+# Kotlin specific
+*.class
+*.kt.swp
+*.kotlin_module
+
+# Jetpack Compose
+.compose/
+
+# OS-specific files
+*.swp
+*.swo
+*.tmp
+*.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+*.patch
+*.rej
+
+# Intellij IDEA
+*.idea/**/workspace.xml
+*.idea/**/tasks.xml
+*.idea/**/launch.json
+*.idea/**/runConfigurations.xml
+*.idea/**/gradle.xml
+*.idea/**/vcs.xml
+
+# Exclude sensitive files
+secrets.properties
+signing.properties
+key.properties
+
+# Exclude dependency cache
+.caches/
+
